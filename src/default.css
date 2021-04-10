@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(108, 183, 202);
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+#main-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2),
+    0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.images {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(71, 73, 75);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.profile-box {
+  padding: 15px;
+  display: flex;
+  justify-items: center;
+  margin: 5px 0;
+}
+#profile-array {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 20px auto;
+}
+#texts {
+  margin-left: 20px;
+  margin-top: -20px;
+  font-size: 16px;
+}
+.text {
+  line-height: 7px;
+  font-size: 13px;
+}
+#btn {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(108, 183, 202);
+  color: white;
+  margin: 30px auto 20px auto;
+  display: flex;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 10px 20px;
+  box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.2),
+    0px 6px 20px 0px rgba(92, 92, 92, 0.2);
+}
+#btn:hover,
+.btn1:hover {
+  background-color: rgba(188, 189, 190, 0.918);
+  color: white;
+}
+#btn:focus,
+.btn1:focus {
+  outline: none;
+}
+.btn1 {
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(108, 183, 202);
+  color: white;
+  margin: 50px 0 20px auto;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+  padding: 5px 10px;
+  box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.2);
+}
+
+.btn1:active {
+  font-size: 15px;
+}
+#btn:active {
+  font-size: 18px;
+}
