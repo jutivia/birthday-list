@@ -2,7 +2,8 @@ body {
   background-color: rgb(108, 183, 202);
   font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
-#main-container {
+#main-container,
+#input-form {
   width: 400px;
   margin: 50px auto;
   padding: 20px;
@@ -20,8 +21,9 @@ body {
 }
 .profile-box {
   padding: 15px;
-  display: flex;
-  justify-items: center;
+  display: grid;
+  grid-template-columns: 100px 150px;
+  gap: 30px;
   margin: 5px 0;
 }
 #profile-array {
@@ -30,24 +32,29 @@ body {
   justify-content: flex-start;
   align-content: center;
   margin: 20px auto;
+  text-transform: capitalize;
+  color: rgb(98, 112, 126);
+}
+#name {
+  width: 70px;
 }
 #texts {
   margin-left: 20px;
-  margin-top: -20px;
+  margin-top: 10px;
   font-size: 16px;
 }
 .text {
   line-height: 7px;
   font-size: 13px;
 }
-#btn {
+.btn {
   width: 400px;
   height: 50px;
   border-radius: 5px;
   border: none;
   background-color: rgb(108, 183, 202);
   color: white;
-  margin: 30px auto 20px auto;
+  margin: 20px auto 20px auto;
   display: flex;
   font-size: 22px;
   letter-spacing: 2px;
@@ -57,12 +64,12 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.2),
     0px 6px 20px 0px rgba(92, 92, 92, 0.2);
 }
-#btn:hover,
+.btn:hover,
 .btn1:hover {
   background-color: rgba(188, 189, 190, 0.918);
   color: white;
 }
-#btn:focus,
+.btn:focus,
 .btn1:focus {
   outline: none;
 }
@@ -73,7 +80,7 @@ body {
   border: none;
   background-color: rgb(108, 183, 202);
   color: white;
-  margin: 50px 0 20px auto;
+  margin: 38px 0 20px auto;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -87,4 +94,24 @@ body {
 }
 #btn:active {
   font-size: 18px;
+}
+.unit-input {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  height: 3rem;
+}
+.unit-input input {
+  background: hsl(210, 36%, 96%);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  height: 1.5rem;
+  text-transform: capitalize;
+}
+.unit-input label {
+  font-weight: 700;
+  width: 90px;
+  color: rgb(71, 73, 75);
 }
